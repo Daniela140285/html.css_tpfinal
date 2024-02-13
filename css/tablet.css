@@ -1,0 +1,28 @@
+/*----INDEX----*/
+.legales{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+}
+.legales li{
+    display: inline;
+    text-align: center;
+}
+
+/*----COMPRAR----*/
+.formulario_items{
+    display: flex;
+}
+
+/*----RUBIA----*/
+.container_cerveza{
+    padding: 0 25px;
+}
+.title_cerveza{
+    padding-left: 25px ;
+    font-size: 5rem;
+}
+.presentaciones_img li{
+    width: 20%;
+}

@@ -1,0 +1,410 @@
+/*----INDEX----*/
+/*-header-*/
+.hero{
+    height: 100dvh;  
+    position: relative;
+    width: 100dvw;
+    padding: .1px;
+    cursor: url(../assets/img/cursor.png), auto;
+}
+.hero::after{
+    content: "";
+    display: block;
+    width: 100dvw;
+    height: 100dvh;
+    position: absolute;
+    bottom: 0.1px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    z-index: 20;
+}
+.back_video{
+    position: absolute;
+    z-index: 20;
+    width: 100dvw;
+    height: 100dvh;
+    object-fit: cover;
+    background-position: center;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed; 
+    width: 100dvw;
+    z-index: 40;
+    background-color: var(--bgc-body);
+    justify-content: space-around;
+    box-shadow: 0px 2px 15px 1px rgba(181,180,168,1);
+}
+.logo{
+    width: 50%;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+.logo img{
+    width: 1.3rem ;
+}
+.icon_menu a i{
+    padding: 20px 0;
+    font-size: 2rem;
+}
+.links_menu{
+    display: none;
+    margin: 0;
+}
+.links_menu li a{
+    font-family: var(--font-title);
+    font-size: 1.2rem;
+    color: var(--color-fontone);
+    text-transform: uppercase;
+}
+#menu:target .links_menu {
+    display: flex;
+    flex-direction: column;
+    background-color:var(--bgc-body);
+    gap: 20px;
+    width: 100dvw;
+}
+.close{
+    display: none;
+}
+#menu:target .close{
+    display: block;
+}
+#menu:target .open{
+    display: none;
+}
+.hero_paragraph{
+    position: absolute;
+    bottom: 0;
+    color: var(--color-fontwo);
+    font-size: 0.6rem;
+    font-family: var(--font-secondary);
+    z-index: 30;
+    display: flex;
+    justify-content: center;
+    width: 100dvw;
+}
+/* -- GENERALES--*/
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--padding-section);
+    width: 75vw;
+    margin: 0 auto;
+}     
+.text{
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    margin: 0 20px;    
+}
+.title{
+    font-family: var(--font-title);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0px 5px 30px;
+}
+main{
+    background-color: var(--bgc-body);
+}
+/*--GUSTITO--*/
+ .gustito_figure{
+    width: 50vw;
+    max-width: 300px;
+    min-width: 150px;
+    margin: 20px auto;
+}
+.gustito_figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 0 80px 0;
+}
+.title_gustito{
+    font-family: 'Isabella Script', sans-serif; 
+    font-size: 4rem;
+    margin-left: 10px;
+    padding: 30px 0;
+}
+
+/*--latas--*/
+.latas_cards{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 20px;
+}
+.latas_links{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.latas_img{
+    width: 50vw;
+    max-width: 300px;
+    min-width: 150px;
+    object-fit: cover;
+    margin: 20px auto;
+}
+.latas_links p{
+    font-size: 1.1rem;
+    text-align: center;
+    font-family: var(--font-title);
+    font-weight:300;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+/*-- tome menos--*/
+.tomeMenos{
+    padding: var(--padding-section) ;
+}
+.tomeMenos h3{
+    border-top: 2px solid black;
+    width: 60vw;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 0px;
+    font-family: var(--font-secondary);
+}
+.tomeMenos figure{
+    width: 50vw;
+    max-width: 300px;
+    min-width: 150px;
+    margin: 0 auto;    
+}
+.tomeMenos_img{
+    width: 100%;
+    object-fit: cover;
+}
+/*--footer--*/
+.container_footer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bgc-body);
+}
+.subcontainer_footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#e9e6d3;
+    padding: var(--padding-section);
+}
+.subcontainer_footer figure{
+    width: 15vw;
+    max-width: 50px;
+    min-width: 20px;    
+}
+.logo_footer{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.social_footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+.fa-brands, .fa-regular {
+    font-size: 2rem;
+    color: var(--color-fontone);
+}
+.legales{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+    padding: 20px 0 0;
+}
+.legales li a{
+    color: var(--color-fontone);
+    font-family: var(--font-secondary);
+    font-size: .9rem;
+}
+.container_footer p{
+    text-align: center;
+    padding: 0 20px;
+    font-family: var(--font-secondary);
+    font-size: .8rem;
+}
+
+        /*----COMPRAR----*/
+
+/*--hero--*/
+.hero_cerveza{
+    background-color: var(--bgc-body);
+    width: 100dvw;
+    height: 80dvh;
+    background-repeat: no-repeat;
+    background-size:cover; 
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    cursor: url(../assets/img/cursor.png), auto;
+}
+.hero_cerveza_comprar{
+    background-image: url(../assets/img/hero.compras.jpg);
+}
+.hero_comprar::after{
+    content: "";
+    display: block;
+    width: 100dvw;
+    height: 80dvh;
+    position: absolute;
+    background: linear-gradient(0deg,rgba(255,255,255,0) 57%,rgba(0,0,0,0.7763480392) 100%);
+}
+/*--form--*/
+.comprar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+.container_formulario{
+    width: 70%;    
+    padding: 20px;
+    background-color: #eadbc5;    
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    }
+.formulario_items{
+    margin: 10px 0;
+}
+.formulario_items label{
+    flex-basis: 150px;
+    font-family: var(--font-secondary);
+    font-size: 1.2rem;
+}
+.formulario_items input, textarea{
+    flex: 1;
+    padding: 5px;
+    border: 0.8px solid;
+    font-family: var(--font-secondary);
+}
+.btn{
+    background-color:#a3968d;
+    text-transform: uppercase;
+    font-family: var(--font-secondary);
+    border: none;
+    padding: 6px;
+    margin-top: 5px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 1s;
+}
+.btn:hover{
+    background-color: #fff;
+    color: var(--color-fontone);
+    border: 1px solid;
+    font-weight: bold;
+}
+
+
+        /*----RUBIA----*/
+
+/*--hero--*/
+
+.hero_cerveza_rubia{
+    background-image: url(../assets/img/hero.rubia.jpg);
+}
+.hero_cerveza::after{
+    content: "";
+    display: block;
+    width: 100dvw;
+    height: 80dvh;
+    position: absolute;
+    background: linear-gradient(0deg,rgba(255,255,255,0) 57%,rgba(0,0,0,0.7763480392) 100%);
+}
+/*--main--*/
+main{
+    padding: 0 25px;  
+}
+.title_cerveza{
+    font-family: var(--font-title);
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin: 0;
+    padding: 25px 0 0 ; 
+}
+.container_cerveza{    
+    font-family: var(--font-secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.informacion_cerveza h3{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-top: 0;
+}
+.informacion_cerveza p{
+    font-size: 1.1rem; 
+    line-height: 2.5rem; 
+    margin: 10px 0;
+}
+.presentaciones_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+}
+.presentaciones_links, .presentaciones_img{
+    display: flex;
+    padding: 0;
+    margin-top: 25px;
+}
+.presentaciones_links li{
+    padding: 10px;
+}
+.presentaciones_links li p{
+    text-transform: uppercase;
+    text-align: center;
+}
+.presentaciones_links :nth-child(2){
+    border-right: 2px solid var(--color-third);
+    border-left: 2px solid var(--color-third);
+}
+.presentaciones_container p{
+    color: var(--color-third);
+    margin: 0;
+    line-height: 2rem;
+}
+.presentaciones_img li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.presentaciones_img li img{
+    width: 4.5rem;
+}
+.presentaciones_img li p{
+    text-align: center;
+    color: var(--color-fontone);
+}
+
+        /*----ROJA----*/
+.hero_cerveza_roja{
+    background-image: url(../assets/img/hero.roja.jpg);
+    background-position: top;
+}
+
+        /*----NEGRA----*/
+.hero_cerveza_negra{
+    background-image: url(../assets/img/hero.negra.jpg);
+    background-position: right;
+}
