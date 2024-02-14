@@ -5,7 +5,7 @@
     position: relative;
     width: 100dvw;
     padding: .1px;
-    cursor: url(../assets/img/cursor.png), auto;
+    cursor: url(../img/cursor.png), auto;
 }
 .hero::after{
     content: "";
@@ -254,7 +254,7 @@ main{
     cursor: url(../assets/img/cursor.png), auto;
 }
 .hero_cerveza_comprar{
-    background-image: url(../assets/img/hero.compras.jpg);
+    background-image: url(../img/hero.compras.jpg);
 }
 .hero_comprar::after{
     content: "";
@@ -319,7 +319,7 @@ main{
 /*--hero--*/
 
 .hero_cerveza_rubia{
-    background-image: url(../assets/img/hero.rubia.jpg);
+    background-image: url(../img/hero.rubia.jpg);
 }
 .hero_cerveza::after{
     content: "";
@@ -399,12 +399,12 @@ main{
 
         /*----ROJA----*/
 .hero_cerveza_roja{
-    background-image: url(../assets/img/hero.roja.jpg);
+    background-image: url(../img/hero.roja.jpg);
     background-position: top;
 }
 
         /*----NEGRA----*/
 .hero_cerveza_negra{
-    background-image: url(../assets/img/hero.negra.jpg);
+    background-image: url(../img/hero.negra.jpg);
     background-position: right;
 }
